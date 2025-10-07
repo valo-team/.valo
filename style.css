@@ -1,0 +1,90 @@
+/*
+ * Valorant External Cheat v1 — Demo CSS UI
+ * ----------------------------------------
+ * Static visualization style only (for README/preview use)
+ * Author: Demo Build
+ */
+
+:root {
+  --bg: #0b0c10;
+  --accent: #00f5a0;
+  --accent2: #00d9ff;
+  --text: #e6e6e6;
+  --border: #1f2833;
+  --highlight: #45a29e;
+  --radius: 10px;
+  --font: "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, var(--bg) 60%, #11131a 100%);
+  color: var(--text);
+  font-family: var(--font);
+  min-height: 100vh;
+  margin: 0;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, var(--accent), var(--accent2));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 0.4em;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  width: 420px;
+  box-shadow: 0 0 15px rgba(0, 255, 180, 0.08);
+  padding: 20px 25px;
+}
+
+.title {
+  font-size: 1.1rem;
+  color: var(--highlight);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+.feature {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px dashed #1d222c;
+  font-size: 0.95rem;
+}
+
+.feature:last-child {
+  border-bottom: none;
+}
+
+.feature span {
+  color: var(--text);
+}
+
+.feature .enabled {
+  color: var(--accent2);
+  font-weight: bold;
+}
+
+.footer {
+  margin-top: 18px;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #aaa;
+}
+
+.footer strong {
+  color: var(--accent);
+}
